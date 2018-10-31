@@ -8,4 +8,5 @@ Feature: Testing mail
 	When i enter "shrinidhi.harish"
 	And i enter user "$hravan@1107"
 	Then i click on submit
+	And i click on draft
 	And five th  mail is selected and clicked.

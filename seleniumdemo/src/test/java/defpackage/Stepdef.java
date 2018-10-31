@@ -46,11 +46,10 @@ public void i_click_on_submit() throws InterruptedException {
 		Thread.sleep(5000);
 	String source=	driver.getPageSource();
 	System.out.println(source);
-	}}
+	}
 
-/*
- * @Then("i click on draft")
- * public void i_click_on_draft() throws Exception {
+@Then("i click on draft")
+public void i_click_on_draft() throws Exception {
 	driver.findElement(By.xpath("//*[@id='zti__main_Mail__6_textCell']")).click();
 			// Write code here that turns the phrase aboactions
 	//File src= ((TakesScreenshot)driver). getScreenshotAs(OutputType. FILE);
@@ -68,5 +67,3 @@ public void five_th_mail_is_selected_and_clicked() {
 	
 	
 }
-
- */

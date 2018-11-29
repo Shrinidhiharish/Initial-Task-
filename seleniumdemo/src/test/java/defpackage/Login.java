@@ -1,4 +1,4 @@
-package defpackage;
+package defpackage;//pom file where we have all xpaths
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,28 +6,33 @@ import org.openqa.selenium.WebElement;
 
 public class Login 
 {
-WebDriver driver;
+WebDriver drives;
 
 public Login(WebDriver driver)
 {
-	this.driver=driver;
+	this.drives=driver;
 }
-By click=By.xpath("//input[@type='submit']");
-By user=By.xpath("//*[@id=\"username\"]");
-By pass=By.xpath("//*[@id=\"password\"]");
+By submit=By.xpath("//input[@type='submit']");
+By user=By.xpath("//*[@id='username']");
+By pass=By.xpath("//*[@id='password']");
+
+
 //By mail=By.xpath("//input[@type='submit']");
+
+
+
 
 public WebElement user()
 {
-return driver.findElement(user)	;
+return drives.findElement(user)	;
 }
 public WebElement pass()
 {
-return driver.findElement(pass)	;
+return drives.findElement(pass)	;
 }
-public WebElement click()
+public WebElement submit()
 {
-return driver.findElement(click)	;
+return drives.findElement(submit)	;
 }
 
 
